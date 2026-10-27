@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sorpetran-handoffproto"
+version = "0.1.0"
+description = "按协议校验交接消息的字段、顺序与必填项，标出不合规消息"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "sorpetran" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://sorpetran.github.io"
+Repository = "https://github.com/sorpetran/handoffproto"
+Issues = "https://github.com/sorpetran/handoffproto/issues"
+
+[project.scripts]
+handoffproto = "handoffproto:main"
+
+[tool.setuptools]
+py-modules = ["handoffproto"]
